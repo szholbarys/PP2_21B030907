@@ -12,4 +12,4 @@ for i in range(n):
     
 cor.sort(key = func)
 for i in cor:
-    print(*i)
+   print(*i)  
