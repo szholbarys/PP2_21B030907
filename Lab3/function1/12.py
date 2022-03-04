@@ -7,4 +7,7 @@ def f(n):
 
 n = list(map( int , input().split()))   
 
-f(n)
+f(n) 
+#1 5 6
+# *
+# print(s,sep="")

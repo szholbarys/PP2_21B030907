@@ -1,6 +1,6 @@
 def f(s):
     t = ""
-
+    # pali=s[::-1]
     for i in s:
         t = i + t
 

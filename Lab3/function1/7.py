@@ -7,7 +7,8 @@ def has_33(n):
 
 n = list(map ( int , input().split()))
 
-if has_33(n) == True:
-    print("True")
-else:
-    print("False")
+# if has_33(n) == True:
+#     print("True")
+# else:
+#     print("False")
+print(has_33(n))

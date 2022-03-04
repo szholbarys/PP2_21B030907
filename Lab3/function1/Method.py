@@ -1,3 +1,4 @@
+#14
 def prime(list):
     cnt = 0
     list1 = []
@@ -42,7 +43,7 @@ print(f(r))
 
 
 
-def f(s):
+def Pali(s):
     t = ""
     for i in s:
         t = i + t
@@ -51,7 +52,9 @@ def f(s):
     else:
         return False
 s = input()
-if f(s) == True:
+if Pali(s) == True:
     print("Palindrome")
 else:
     print("Not Palindrome")
+
+# from 14 import *

@@ -4,3 +4,5 @@ def f(x , y):
     
 x, y = map(int,input().split())
 f(x , y)
+# x + y = 35
+# 4x + 2y = 94
