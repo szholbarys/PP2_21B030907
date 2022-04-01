@@ -1,4 +1,4 @@
-s = input()
+s = input() # path
 l = input().split()
 with open(s, "w") as fil:
     fil.write(f"n = {str(len(l))} \n[")

@@ -2,7 +2,7 @@ import time
 import math
 
 def square_anter_mil(n, ms):
-    time.sleep(ms / 1000)
+    time.sleep(ms / 1000) # stop time
     return math.sqrt(n)
 
 number = int(input())

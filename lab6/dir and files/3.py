@@ -6,7 +6,7 @@ isFile = os.path.exists(s)
 if isFile:
     with open(s, "r") as f:
         ff = f.readline()
-    print(os.path.basename(s))
+    print(os.path.basename(s)) # print files name 
     print(f"direcroty portion = {ff}")
 else:
     print("Not found")
