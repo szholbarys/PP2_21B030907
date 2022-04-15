@@ -39,10 +39,10 @@ for i in get_color(color_set):
    cnt+=1
 
 # all info about shapes
-erase = pygame.transform.scale(pygame.image.load(os.path.join('images','eraserr.png')),(40,40)) # range: 0-40
+erase = pygame.transform.scale(pygame.image.load(os.path.join('image', 'eraser.png')),(40,40)) # range: 0-40
 screen.blit(erase,(0,HEIGHT-40))
 
-pen = pygame.transform.scale(pygame.image.load(os.path.join('images','pen.png')),(40,40)) # range: 50-90
+pen = pygame.transform.scale(pygame.image.load(os.path.join('image', 'pen.png')),(40,40)) # range: 50-90
 screen.blit(pen,(40+10,HEIGHT-40))
 
 pygame.draw.rect(screen,color_set['black'],(90+10,HEIGHT-40,50,40),3) # range: 100-150
@@ -54,10 +54,10 @@ shapes = font.render('Shapes',True,color_set['black'])
 screen.blit(shapes,(180+20+10,HEIGHT-40))
 
 # width of the line
-plus = pygame.transform.scale(pygame.image.load(os.path.join('images','plus.png')),(40,40))
+plus = pygame.transform.scale(pygame.image.load(os.path.join('image', 'plus.png')),(40,40))
 screen.blit(plus,(WIDTH/2-120,HEIGHT-40)) 
 
-minus = pygame.transform.scale(pygame.image.load(os.path.join('images','minus.png')),(40,40))
+minus = pygame.transform.scale(pygame.image.load(os.path.join('image', 'minus.png')),(40,40))
 screen.blit(minus,(WIDTH/2-80,HEIGHT-40))
 
 # Selecting one of the grids

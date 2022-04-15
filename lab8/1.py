@@ -34,12 +34,12 @@ body = [[radius+20,radius+80+200],[0,0],[0,0],[0,0],[0,0]]
 border_width = 20
 
 # the end of the game
-game_over = pygame.transform.scale(pygame.image.load(os.path.join('images','game over.jpg')),(WIDTH,HEIGHT))
+game_over = pygame.transform.scale(pygame.image.load(os.path.join(r'C:\Users\user\Desktop\pp2.lab\PP2_21B030907\lab8\image\game_over.jpg')),(WIDTH,HEIGHT))
 
-score = pygame.transform.scale(pygame.image.load(os.path.join('images','score.png')),(200,100))
+score = pygame.transform.scale(pygame.image.load(os.path.join(r'C:\Users\user\Desktop\pp2.lab\PP2_21B030907\lab8\image\score.png')),(200,100))
 cnt_score = 0
 
-level = pygame.transform.scale(pygame.image.load(os.path.join('images','level.png')),(200,120))
+level = pygame.transform.scale(pygame.image.load(os.path.join(r'C:\Users\user\Desktop\pp2.lab\PP2_21B030907\lab8\image\level.gif')),(200,120))
 cnt_level = 1
 
 # pattern for counting score and level

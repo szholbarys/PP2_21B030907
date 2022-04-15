@@ -15,7 +15,7 @@ pygame.display.set_caption('Snake Game')
 run = True
 score = 0
 font = pygame.font.SysFont('Cooper Black',grid_size)
-game_over_img = pygame.image.load(os.path.join('images','game over.png'))
+game_over_img = pygame.image.load(os.path.join('images','game_over.png'))
 timer = 0
 
 # necessary colors
@@ -26,7 +26,7 @@ snake_color = (255,0,0)
 # velocity of the snake
 clock = pygame.time.Clock()
 FPS = 10
-
+a
 # types of food
 foods = [
          pygame.transform.scale(pygame.image.load(os.path.join('images','burger.png')),(40,40)),
