@@ -26,7 +26,7 @@ snake_color = (255,0,0)
 # velocity of the snake
 clock = pygame.time.Clock()
 FPS = 10
-a
+
 # types of food
 foods = [
          pygame.transform.scale(pygame.image.load(os.path.join('images','burger.png')),(40,40)),
@@ -55,7 +55,7 @@ def show_score(font):
 
 # all info about Food
 class Food:
-   def _init_(self):
+   def __init__(self):
       i = randint(0,3)
       self.image = foods[i]
       self.cost = i + 1
@@ -75,7 +75,7 @@ class Food:
 
 # all info about snake
 class Snake:
-   def _init_(self):
+   def __init__(self):
       self.body = [Vector2(7,10), Vector2(6,10), Vector2(5,10)]
       self.dx = 1
       self.dy = 0

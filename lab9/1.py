@@ -40,10 +40,10 @@ bg = pygame.image.load(os.path.join('images','AnimatedStreet.png'))
 pygame.mixer.music.load(os.path.join('music','background.wav'))
 pygame.mixer.music.play(-1)
 
-# player infer(pygame.sprite.Sprite)o
+# player infer(pygame.sprite.Sprite)
 class Play:
-   def _init_(self):
-      super()._init_()
+   def __init__(self):
+      super().__init__()
       self.image = pygame.image.load(os.path.join('images','player.png'))
       self.rect = self.image.get_rect()
       self.rect.center = (WIDTH/2 - car_width/2, HEIGHT - car_length)
@@ -59,9 +59,9 @@ class Play:
 
 # enemies info
 class Enemy(pygame.sprite.Sprite):
-   def _init_(self):
-      super()._init_()
-      self.image = pygame.image.load(os.path.join('images','Enemy.png'))
+   def __init__(self):
+      super().__init__()
+      self.image = pygame.image.load(os.path.join('images','enemy.png'))
       self.rect = self.image.get_rect()
       self.rect.center = (randint(car_width,WIDTH-car_width),0)
    
@@ -78,8 +78,8 @@ coin_cnt = 0
 font_coin = pygame.font.SysFont('Calibri', 20)
 
 class Coin(pygame.sprite.Sprite):
-   def _init_(self):
-      super()._init_()
+   def __init__(self):
+      super().__init__()
       # randomly appearing coins
       self.type = randint(1,10)
       if 1 <= self.type <= 3:

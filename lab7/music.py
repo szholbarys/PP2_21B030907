@@ -21,7 +21,7 @@ print(l[0])
 pos = 0
 pygame.mixer.music.load(l[pos])
 pygame.mixer.music.play()
-pygame.mixer.music.queue(l[random.randrange(0, 8)])
+pygame.mixer.music.queue(l[random.randrange(0, 5)])
 while not do:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -31,7 +31,7 @@ while not do:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_RCTRL:
             pygame.mixer.music.unpause()
         if event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT:
-            if pos <= 7:
+            if pos <= 4:
                 pos+=1
             else:
                 pos = 0
@@ -42,7 +42,7 @@ while not do:
             if pos >= 1:
                 pos-=1
             else:
-                pos = 8
+                pos = 5
             pygame.mixer.music.stop()
             pygame.mixer.music.load(l[pos])
             pygame.mixer.music.play()
