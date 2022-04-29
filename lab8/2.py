@@ -29,7 +29,7 @@ score = 0
 # all fonts
 font = pygame.font.SysFont('Calibri',60)
 font_score = pygame.font.SysFont('Calibri',20)
-game_over = font.render('Game Over!', True, black)
+go = pygame.image.load(os.path.join('image','ramadan.png'))
 
 # background фон
 bg = pygame.image.load(os.path.join('image','street.png'))
@@ -78,7 +78,7 @@ font_coin = pygame.font.SysFont('Calibri', 20)
 class Coin(pygame.sprite.Sprite):
    def __init__(self):
       super().__init__()
-      self.image = pygame.transform.scale(pygame.image.load(os.path.join('image','coin.png')),(50,40))
+      self.image = pygame.transform.scale(pygame.image.load(os.path.join('image','burger.png')),(50,40))
       self.rect = self.image.get_rect()
       self.rect.center = (randint(50,WIDTH-50),0)
    
@@ -148,7 +148,14 @@ while True:
    # collison with enemies
    if pygame.sprite.spritecollideany(p1,enemies):
    # losing the game
-      screen.fill(red)
+    def show_go_screen(self):
+        # game over/continue
+        if not self.running:
+            return
+
+        go = pg.image.load("ranadan.png")
+        self.screen.blit(go,(0,0))
+     
 
       pygame.mixer.music.stop()
       pygame.mixer.Sound(os.path.join('music','crash.wav')).play()
